@@ -79,12 +79,12 @@
     color: black;
     text-decoration: none; }
 
-body.open-right #fp-nav {
+body.open #fp-nav {
   display: none; }
-body.open-right #toggle div.bar:before, body.open-right #toggle div.bar:after {
+body.open #toggle div.bar:before, body.open #toggle div.bar:after {
   background: #300; }
 
-body.open-right #off-canvas {
+body.open #off-canvas {
   top: 0; }
 
 /*# sourceMappingURL=style.css.map */

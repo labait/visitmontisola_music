@@ -1,0 +1,143 @@
+$spacer: 15px;
+
+body {
+  //display: none !important;
+}
+
+
+#toggle {
+  position: absolute;
+  top: $spacer*2;
+  right: $spacer*2;
+  width: $spacer*2;
+  height: 21px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#toggle div.bar,
+#toggle div.bar:before,
+#toggle div.bar:after {
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+
+#toggle {
+  div.bar, div.bar:before, div.bar:after {
+    width: 100%;
+    height: 3px;
+    background: white;
+  }
+  div.bar {
+    position: relative;
+    transform: translateY(9px);
+    transition: all 0.3s 0.3s ease;
+
+    &:after, &:before{
+      content: " ";
+      position: absolute;
+      transition: all 0.3s 0.3s ease, transform 0.3s ease;
+    }
+
+    &:before {
+      bottom: 9px;
+    }
+    &:after {
+      top: 9px;
+    }
+  }
+
+  div.bar.animate {
+    &:after, &:before{
+      transition: all 0.3s ease, transform 0.3s 0.3s ease;
+    }
+    &:after {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:before {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+
+#fullpage {
+  z-index: 1;
+}
+
+#page {
+  background: #222222;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+}
+
+
+#off-canvas {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  top: -100vw;
+  height: 100vh;
+
+  transition: all 0.3s ease;
+  background: white;
+
+  nav ul, nav ul li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: static;
+  }
+
+  nav ul {
+    padding: 30px;
+  }
+
+  nav ul li {
+    margin-bottom: $spacer;
+    font-size: 2em;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+body.open{
+
+    #fp-nav {
+      display: none;
+    }
+
+    #toggle {
+      div.bar:before, div.bar:after {
+        background: #300;
+      }
+    }
+}
+
+
+body.open #page {
+    //right: 300px;
+}
+
+body.open #off-canvas {
+    top: 0;
+}
