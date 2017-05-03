@@ -1,7 +1,16 @@
 $spacer: 15px;
 
+$primary-color: #222222;
+$secondary-color: #f9f9f9;
+$extra-color: #ED9000;
+
+
 body {
   //display: none !important;
 }
 
-@import "off-canvas"
+@import "off-canvas";
+@import "section0";
+@import "sectiontext";
+@import "section1";
+@import "section2"

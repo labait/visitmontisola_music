@@ -87,4 +87,86 @@ body.open #toggle div.bar:before, body.open #toggle div.bar:after {
 body.open #off-canvas {
   top: 0; }
 
+#section0 {
+  background-image: url("img/section0.jpg"); }
+  #section0 img {
+    width: 100%;
+    filter: blur(3px); }
+  #section0 h1 {
+    color: #f9f9f9;
+    text-align: center;
+    text-transform: uppercase; }
+  #section0 p {
+    color: #f9f9f9;
+    text-align: center; }
+  #section0 h4 {
+    color: #f9f9f9;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1%;
+    border: 1px solid #f9f9f9;
+    margin: 2% 40%; }
+  #section0 a {
+    color: #f9f9f9; }
+  #section0 .img {
+    position: relative; }
+  #section0 .text {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 100%; }
+
+#sectiontext {
+  padding-bottom: 3%; }
+  #sectiontext h2 {
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 2%;
+    border-bottom: 1px solid #ED9000;
+    margin: 0% 35%;
+    letter-spacing: 5px; }
+  #sectiontext h3 {
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 1.3em;
+    padding: 5px;
+    letter-spacing: 2.5px; }
+  #sectiontext p.text1 {
+    width: 30%;
+    padding: 4% 2% 2% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: #222222;
+    letter-spacing: 2.5px; }
+  #sectiontext p.text2 {
+    width: 55%;
+    padding: 2% 0% 0% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: #222222; }
+  #sectiontext img {
+    width: 15%;
+    margin-top: -50%;
+    margin-left: 50%;
+    padding-bottom: 2%; }
+
+#section1 img {
+  width: 100%; }
+#section1 p {
+  color: #f9f9f9;
+  text-align: center;
+  width: 30%;
+  padding: 0% 35%;
+  text-transform: uppercase;
+  font-size: 2em; }
+#section1 .img {
+  position: relative; }
+#section1 .text {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */

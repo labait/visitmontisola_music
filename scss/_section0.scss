@@ -1,0 +1,44 @@
+$spacer: 15px;
+$primary-color: #222222;
+$secondary-color: #f9f9f9;
+$extra-color: #ED9000;
+
+body {
+  //display: none !important;
+}
+#section0{
+  background-image: url('img/section0.jpg');
+  img{
+    width: 100%;
+    filter: blur(3px);
+  }
+  h1{
+    color: $secondary-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p{
+    color: $secondary-color;
+    text-align: center;
+  }
+  h4{
+    color: $secondary-color;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1%;
+    border: 1px solid $secondary-color;
+    margin: 2% 40%;
+  }
+  a{
+    color: $secondary-color;
+  }
+  .img{
+    position: relative;
+  }
+  .text{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 100%;
+  }
+}

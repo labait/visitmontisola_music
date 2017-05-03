@@ -1,0 +1,50 @@
+$spacer: 15px;
+$primary-color: #222222;
+$secondary-color: #f9f9f9;
+$extra-color: #ED9000;
+
+body {
+  //display: none !important;
+}
+
+#sectiontext{
+  padding-bottom:3%;
+  h2{
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 2%;
+    border-bottom: 1px solid $extra-color;
+    margin: 0% 35%;
+    letter-spacing: 5px;
+  }
+  h3{
+    text-transform: uppercase;
+    color: $primary-color;
+    font-size: 1.3em;
+    padding: 5px;
+    letter-spacing: 2.5px;
+  }
+  p.text1{
+    width: 30%;
+    padding: 4% 2% 2% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: $primary-color;
+    letter-spacing: 2.5px;
+  }
+  p.text2{
+    width: 55%;
+    padding: 2% 0% 0% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: $primary-color;
+  }
+  img{
+    width: 15%;
+    margin-top: -50%;
+    margin-left: 50%;
+    padding-bottom: 2%
+  }
+}
