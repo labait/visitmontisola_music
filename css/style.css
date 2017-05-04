@@ -96,17 +96,19 @@ body.open #off-canvas {
 #section0 h1 {
   color: #f9f9f9;
   text-align: center;
-  text-transform: uppercase; }
+  font-family: "bauerbodni_btbold"; }
 #section0 p {
   color: #f9f9f9;
-  text-align: center; }
+  text-align: center;
+  font-family: "bauerbodni_btbold"; }
 #section0 h4 {
   color: #f9f9f9;
   text-align: center;
   text-transform: uppercase;
   padding: 1%;
   border: 1px solid #f9f9f9;
-  margin: 2% 40%; }
+  margin: 2% 40%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section0 a {
   color: #f9f9f9; }
 #section0 .img {
@@ -127,26 +129,30 @@ body.open #off-canvas {
     padding-top: 2%;
     border-bottom: 1px solid #ED9000;
     margin: 0% 30%;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
   #sectiontext h3 {
     text-transform: uppercase;
     color: #222222;
     font-size: 1.3em;
     padding: 5px;
-    letter-spacing: 2.5px; }
+    letter-spacing: 2.5px;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
   #sectiontext p.text1 {
     width: 30%;
     padding: 4% 2% 2% 4%;
     text-align: left;
     font-size: 1.2em;
     color: #222222;
-    letter-spacing: 2.5px; }
+    letter-spacing: 2.5px;
+    font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
   #sectiontext p.text2 {
     width: 55%;
     padding: 2% 0% 0% 4%;
     text-align: left;
     font-size: 1.2em;
-    color: #222222; }
+    color: #222222;
+    font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
   #sectiontext img {
     width: 15%;
     margin-top: -50%;
@@ -161,7 +167,8 @@ body.open #off-canvas {
   width: 30%;
   padding: 0% 35%;
   text-transform: uppercase;
-  font-size: 2em; }
+  font-size: 2em;
+  font-family: 'akzidenz-grotesk_bq_lightRg', sans-serif; }
 #section1 .img {
   position: relative; }
 #section1 .text {
@@ -178,32 +185,37 @@ body.open #off-canvas {
   padding-top: 2%;
   border-bottom: 1px solid #ED9000;
   margin: 0% 15%;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .ascolta li.spotify {
   float: left;
   width: 13%;
   text-align: right;
   border-bottom: 1px solid #80D422;
   margin: 3% 10%;
-  padding: 0.5% 0%; }
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .ascolta li.youtube {
   float: left;
   width: 13%;
   text-align: right;
   border-bottom: 1px solid #FA4A9D;
   margin: 3% 10%;
-  padding: 0.5% 0%; }
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .ascolta li.facebook {
   float: left;
   width: 13%;
   text-align: right;
   border-bottom: 1px solid #80C3F2;
   margin: 3% 10%;
-  padding: 0.5% 0%; }
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .ascolta a {
   color: white;
   text-transform: uppercase;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .footer ul {
   overflow-x: hidden;
   white-space: nowrap;
@@ -216,14 +228,16 @@ body.open #off-canvas {
   color: #f9f9f9;
   font-size: 0.5em;
   display: inline;
-  padding-right: 70%; }
+  padding-right: 70%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 #section2 .footer li.right {
   text-align: right;
   display: inline; }
   #section2 .footer li.right a {
     color: #f9f9f9;
     font-size: 0.5em;
-    padding: 0% 2%; }
+    padding: 0% 2%;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
 
 ul.first li {
   float: left;
@@ -259,5 +273,26 @@ ul.fourth li {
   ul.fourth li img {
     width: 30%;
     margin: 0 auto; }
+
+@font-face {
+  font-family: 'bauerbodni_btbold';
+  src: url("bauer_bodoni_bold_bt-webfont.woff2") format("woff2"), url("bauer_bodoni_bold_bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqregular';
+  src: url("akzidenzgrotesk-regular-webfont.woff2") format("woff2"), url("akzidenzgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bq_lightRg';
+  src: url("akzidenzgrotesk-light-webfont.woff2") format("woff2"), url("akzidenzgrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqbold';
+  src: url("akzidenzgrotesk-bold-webfont.woff2") format("woff2"), url("akzidenzgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

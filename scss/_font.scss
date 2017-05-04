@@ -1,0 +1,36 @@
+$spacer: 15px;
+$primary-color: #222222;
+$secondary-color: #f9f9f9;
+$extra-color: #ED9000;
+
+body {
+  //display: none !important;
+}
+@font-face {
+    font-family: 'bauerbodni_btbold';
+    src: url('bauer_bodoni_bold_bt-webfont.woff2') format('woff2'),
+         url('bauer_bodoni_bold_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_bqregular';
+    src: url('akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_bq_lightRg';
+    src: url('akzidenzgrotesk-light-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('akzidenzgrotesk-bold-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
