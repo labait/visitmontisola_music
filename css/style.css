@@ -17,7 +17,7 @@
 #toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {
   width: 100%;
   height: 3px;
-  background: white; }
+  background: #ED9000; }
 #toggle div.bar {
   position: relative;
   transform: translateY(9px);
@@ -60,61 +60,62 @@
   z-index: 2;
   position: fixed;
   width: 100vw;
-  top: -100vw;
+  top: -200vw;
   height: 100vh;
   transition: all 0.3s ease;
-  background: white; }
+  background: #ED9000; }
   #off-canvas nav ul, #off-canvas nav ul li {
     margin: 0;
     padding: 0;
     display: block;
     position: static; }
   #off-canvas nav ul {
-    padding: 30px; }
+    padding: 30px;
+    text-align: center; }
   #off-canvas nav ul li {
     margin-bottom: 15px;
     font-size: 2em; }
   #off-canvas nav ul li a {
     text-transform: uppercase;
-    color: black;
+    color: #f9f9f9;
     text-decoration: none; }
 
 body.open #fp-nav {
   display: none; }
 body.open #toggle div.bar:before, body.open #toggle div.bar:after {
-  background: #300; }
+  background: #f9f9f9; }
+body.open #toggle div.bar {
+  background: #ED9000; }
 
 body.open #off-canvas {
   top: 0; }
 
-#section0 {
-  background-image: url("img/section0.jpg"); }
-  #section0 img {
-    width: 100%;
-    filter: blur(3px); }
-  #section0 h1 {
-    color: #f9f9f9;
-    text-align: center;
-    text-transform: uppercase; }
-  #section0 p {
-    color: #f9f9f9;
-    text-align: center; }
-  #section0 h4 {
-    color: #f9f9f9;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1%;
-    border: 1px solid #f9f9f9;
-    margin: 2% 40%; }
-  #section0 a {
-    color: #f9f9f9; }
-  #section0 .img {
-    position: relative; }
-  #section0 .text {
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    width: 100%; }
+#section0 img {
+  width: 100%;
+  filter: blur(3px); }
+#section0 h1 {
+  color: #f9f9f9;
+  text-align: center;
+  text-transform: uppercase; }
+#section0 p {
+  color: #f9f9f9;
+  text-align: center; }
+#section0 h4 {
+  color: #f9f9f9;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1%;
+  border: 1px solid #f9f9f9;
+  margin: 2% 40%; }
+#section0 a {
+  color: #f9f9f9; }
+#section0 .img {
+  position: relative; }
+#section0 .text {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  width: 100%; }
 
 #sectiontext {
   padding-bottom: 3%; }
@@ -125,7 +126,7 @@ body.open #off-canvas {
     padding-bottom: 5px;
     padding-top: 2%;
     border-bottom: 1px solid #ED9000;
-    margin: 0% 35%;
+    margin: 0% 30%;
     letter-spacing: 5px; }
   #sectiontext h3 {
     text-transform: uppercase;
@@ -178,27 +179,85 @@ body.open #off-canvas {
   border-bottom: 1px solid #ED9000;
   margin: 0% 15%;
   letter-spacing: 5px; }
-#section2 .ascolta li {
+#section2 .ascolta li.spotify {
   float: left;
-  padding: 4% 0%;
-  width: 33%;
-  text-align: center; }
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #80D422;
+  margin: 3% 10%;
+  padding: 0.5% 0%; }
+#section2 .ascolta li.youtube {
+  float: left;
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #FA4A9D;
+  margin: 3% 10%;
+  padding: 0.5% 0%; }
+#section2 .ascolta li.facebook {
+  float: left;
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #80C3F2;
+  margin: 3% 10%;
+  padding: 0.5% 0%; }
 #section2 .ascolta a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px; }
-#section2 .footer {
-  float: left; }
-  #section2 .footer p {
-    text-align: left;
+#section2 .footer ul {
+  overflow-x: hidden;
+  white-space: nowrap;
+  height: 1em;
+  width: 100%;
+  background-color: #333;
+  padding: 45px 0px; }
+#section2 .footer li.left {
+  text-align: left;
+  color: #f9f9f9;
+  font-size: 0.5em;
+  display: inline;
+  padding-right: 70%; }
+#section2 .footer li.right {
+  text-align: right;
+  display: inline; }
+  #section2 .footer li.right a {
     color: #f9f9f9;
     font-size: 0.5em;
-    margin-left: 4%; }
-  #section2 .footer a {
-    text-align: right;
-    color: #f9f9f9;
-    font-size: 0.5em;
-    margin: 4%;
-    padding: 0; }
+    padding: 0% 2%; }
+
+ul.first li {
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.first li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.second li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.second li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.third li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.third li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.fourth li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.fourth li img {
+    width: 30%;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
