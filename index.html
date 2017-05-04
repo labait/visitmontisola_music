@@ -13,8 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <!--[if IE]>
   <script type="text/javascript">
   var console = { log: function() {} };
@@ -29,7 +28,7 @@
 <script type="text/javascript">
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionsColor: ['#1bbc9b', '#f9f9f9', '#7BAABE', '#222222'],
+    sectionsColor: ['#', '#f9f9f9', '#7BAABE', '#222222'],
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
     menu: "#menu",
     navigation: true
@@ -60,7 +59,7 @@ $(document).ready(function() {
            <div class="text">
              <h1>Montisola</h1>
              <p>tra cielo e terra</p>
-             <h4><a href="#">scopri</a></h4>
+             <h4><a href="#sectiontext">scopri</a></h4>
            </div>
         </div>
       </div>
@@ -148,9 +147,9 @@ $(document).ready(function() {
           </nav> -->
           <div class="footer">
             <p> © 2017, Monte Isola </p>
-            <a href=""> Spotify </a>
-            <a href=""> Facebook </a>
-            <a href=""> Youtube </a>
+            <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Spotify </a>
+            <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Facebook </a>
+            <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Youtube </a>
         </div>
       </div>
     </div>
