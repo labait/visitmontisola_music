@@ -169,4 +169,36 @@ body.open #off-canvas {
   left: 10px;
   width: 100%; }
 
+#section2 h2 {
+  text-transform: uppercase;
+  color: #f9f9f9;
+  font-size: 2em;
+  padding-bottom: 5px;
+  padding-top: 2%;
+  border-bottom: 1px solid #ED9000;
+  margin: 0% 15%;
+  letter-spacing: 5px; }
+#section2 .ascolta li {
+  float: left;
+  padding: 4% 0%;
+  width: 33%;
+  text-align: center; }
+#section2 .ascolta a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px; }
+#section2 .footer {
+  float: left; }
+  #section2 .footer p {
+    text-align: left;
+    color: #f9f9f9;
+    font-size: 0.5em;
+    margin-left: 4%; }
+  #section2 .footer a {
+    text-align: right;
+    color: #f9f9f9;
+    font-size: 0.5em;
+    margin: 4%;
+    padding: 0; }
+
 /*# sourceMappingURL=style.css.map */

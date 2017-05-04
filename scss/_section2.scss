@@ -3,3 +3,45 @@ $spacer: 15px;
 body {
   //display: none !important;
 }
+
+#section2{
+  h2{
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 2%;
+    border-bottom: 1px solid $extra-color;
+    margin: 0% 15%;
+    letter-spacing: 5px;
+  }
+  .ascolta{
+    li{
+      float: left;
+      padding: 4% 0%;
+      width: 33%;
+      text-align: center;
+    }
+    a {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+  }
+  .footer{
+    float: left;
+    p{
+      text-align: left;
+      color: $secondary-color;
+      font-size: 0.5em;
+      margin-left: 4%;
+    }
+    a{
+      text-align: right;
+      color:$secondary-color;
+      font-size: 0.5em;
+      margin: 4%;
+      padding: 0;
+    }
+  }
+}
