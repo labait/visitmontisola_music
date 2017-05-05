@@ -1,5 +1,6 @@
 #page-section3 {
   .text{
+    font-size: 2em;
     background-color: rgba(255,255,255,0.2);
     @include border-radius($spacer/2);
     padding: $spacer*2;

@@ -53,9 +53,6 @@ h1, h2, h3 {
       margin-left: auto;
       margin-right: auto; }
 
-p {
-  font-size: 2em; }
-
 #page {
   background: #222222;
   padding: 0;
@@ -181,6 +178,7 @@ body.off-canvas #toggle div.bar {
     margin-left: auto; }
 
 #page-section3 .text {
+  font-size: 2em;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-border-radius: 7.5px;
   -moz-border-radius: 7.5px;
@@ -221,9 +219,20 @@ body.off-canvas #toggle div.bar {
 #page-section4 .buy a.link img {
   width: 150px; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 375px) {
   .section h2 {
     font-size: 2em; }
+
+  #page-section1 h2 {
+    font-size: 3em; }
+
+  #page-section2 .col {
+    padding-top: 15px; }
+  #page-section2 .col1 {
+    padding-top: 0; }
+
+  #page-section3 .slide .text {
+    font-size: 1.5em; }
 
   #page-section4 .listen {
     margin-bottom: 30px; }
@@ -233,6 +242,10 @@ body.off-canvas #toggle div.bar {
       #page-section4 .listen a.link i {
         font-size: 1.5em; }
   #page-section4 .buy a.link img {
-    width: 120px; } }
+    width: 120px; }
+
+  #off-canvas nav ul li {
+    margin-bottom: 15px;
+    font-size: 3em; } }
 
 /*# sourceMappingURL=style.css.map */
