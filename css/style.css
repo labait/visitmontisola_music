@@ -62,13 +62,20 @@
   width: 100vw;
   top: -200vw;
   height: 100vh;
+  height: auto;
+  padding: 17% 0%;
   transition: all 0.3s ease;
   background: #ED9000; }
-  #off-canvas nav ul, #off-canvas nav ul li {
+  #off-canvas nav ul {
     margin: 0;
     padding: 0;
     display: block;
     position: static; }
+    #off-canvas nav ul li {
+      margin: 0% 37% 1% 37%; }
+    #off-canvas nav ul li:hover {
+      text-decoration: underline;
+      transition: all 0.1s ease; }
   #off-canvas nav ul {
     padding: 30px;
     text-align: center; }
@@ -225,6 +232,8 @@ body.open #off-canvas {
 #section2 i.fa-facebook-square {
   padding-right: 12%;
   font-size: 1.5em; }
+#section2 .footer nav {
+  padding-top: 40%; }
 #section2 .footer ul {
   overflow-x: hidden;
   white-space: nowrap;
