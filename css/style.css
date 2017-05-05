@@ -28,6 +28,10 @@ h1 {
 
 .section {
   text-align: center; }
+  .section .content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .section h1, .section h2 {
     font-family: "bauerbodni_btbold"; }
   .section h2 {
@@ -131,9 +135,6 @@ body.off-canvas #toggle div.bar {
   background: #ED9000; }
 
 #page-section1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../img/section0.jpg");
   background-size: cover; }
   #page-section1 h2:after {

@@ -19,6 +19,11 @@ h1{
 
 .section {
 	text-align:center;
+	.content {
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
 	h1, h2{
 		font-family: $font2-bold;
 	}
