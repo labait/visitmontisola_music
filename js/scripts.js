@@ -1,13 +1,11 @@
 $(function(){
 
   $('#toggle').click(function() {
-  	$('#toggle .bar').toggleClass('animate');
-  	$('body').toggleClass('open');
+  	$('body').toggleClass('off-canvas');
   });
 
   $("#off-canvas #menu li a").click(function(e){
-    $('body').removeClass('open');
+    $('body').removeClass('off-canvas');
   })
-
 
 })

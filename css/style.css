@@ -37,6 +37,18 @@ p {
   src: url("./fonts/akzidenzgrotesk-bold-webfont.woff2") format("woff2"), url("./fonts/akzidenzgrotesk-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+#page {
+  background: #222222;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  z-index: 0; }
+
 #toggle {
   position: absolute;
   top: 30px;
@@ -45,73 +57,42 @@ p {
   height: 21px;
   cursor: pointer;
   z-index: 3; }
+  #toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {
+    width: 100%;
+    height: 3px;
+    background: #ED9000; }
+  #toggle div.bar {
+    position: relative;
+    transform: translateY(9px);
+    transition: all 0.3s 0.3s ease; }
+    #toggle div.bar:after, #toggle div.bar:before {
+      content: " ";
+      position: absolute;
+      transition: all 0.3s 0.3s ease, transform 0.3s ease; }
+    #toggle div.bar:before {
+      bottom: 9px; }
+    #toggle div.bar:after {
+      top: 9px; }
 
-#toggle div.bar,
-#toggle div.bar:before,
-#toggle div.bar:after {
-  width: 100%;
-  height: 3px;
-  background: white; }
-
-#toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {
-  width: 100%;
-  height: 3px;
-  background: #ED9000; }
-#toggle div.bar {
-  position: relative;
-  transform: translateY(9px);
-  transition: all 0.3s 0.3s ease; }
-  #toggle div.bar:after, #toggle div.bar:before {
-    content: " ";
-    position: absolute;
-    transition: all 0.3s 0.3s ease, transform 0.3s ease; }
-  #toggle div.bar:before {
-    bottom: 9px; }
-  #toggle div.bar:after {
-    top: 9px; }
-#toggle div.bar.animate:after, #toggle div.bar.animate:before {
+body.off-canvas #toggle div.bar:after, body.off-canvas #toggle div.bar:before {
   transition: all 0.3s ease, transform 0.3s 0.3s ease; }
-#toggle div.bar.animate:after {
+body.off-canvas #toggle div.bar:after {
   top: 0;
   transform: rotate(45deg); }
-#toggle div.bar.animate:before {
+body.off-canvas #toggle div.bar:before {
   bottom: 0;
   transform: rotate(-45deg); }
 
-#fullpage {
-  z-index: 1; }
-
-#page {
-  background: #222222;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: absolute;
-  width: 100%;
-  right: 0;
-  z-index: 0; }
-
 #off-canvas {
+  transition: all 0.3s ease;
   z-index: 2;
   position: fixed;
   width: 100vw;
-  top: -200vw;
+  top: -101vh;
   height: 100vh;
-  height: auto;
-  padding: 17% 0%;
-  transition: all 0.3s ease;
   background: #ED9000; }
   #off-canvas nav ul {
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: static; }
-    #off-canvas nav ul li {
-      margin: 0% 37% 1% 37%; }
+    display: block; }
     #off-canvas nav ul li:hover {
       text-decoration: underline;
       transition: all 0.1s ease; }
@@ -119,22 +100,21 @@ p {
     padding: 30px;
     text-align: center; }
   #off-canvas nav ul li {
-    margin-bottom: 15px;
-    font-size: 2em; }
+    margin-bottom: 30px;
+    list-style: none;
+    transition: all 0.3s ease;
+    font-size: 3em;
+    font-family: "akzidenz-grotesk_bqbold", sans-serif; }
   #off-canvas nav ul li a {
-    text-transform: uppercase;
     color: #f9f9f9;
     text-decoration: none; }
 
-body.open #fp-nav {
-  display: none; }
-body.open #toggle div.bar:before, body.open #toggle div.bar:after {
-  background: #f9f9f9; }
-body.open #toggle div.bar {
-  background: #ED9000; }
-
-body.open #off-canvas {
+body.off-canvas #off-canvas {
   top: 0; }
+body.off-canvas #toggle div.bar:before, body.off-canvas #toggle div.bar:after {
+  background: #f9f9f9; }
+body.off-canvas #toggle div.bar {
+  background: #ED9000; }
 
 #page-section1 img {
   width: 100%;
