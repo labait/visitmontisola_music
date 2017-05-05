@@ -26,6 +26,10 @@ body {
 h1 {
   font-size: 6em; }
 
+h1, h2, h3 {
+  padding-left: 30px;
+  padding-right: 30px; }
+
 .section {
   text-align: center; }
   .section .content {
@@ -216,5 +220,19 @@ body.off-canvas #toggle div.bar {
         vertical-align: middle; }
 #page-section4 .buy a.link img {
   width: 150px; }
+
+@media all and (max-width: 768px) {
+  .section h2 {
+    font-size: 2em; }
+
+  #page-section4 .listen {
+    margin-bottom: 30px; }
+    #page-section4 .listen a.link {
+      margin-bottom: 15px;
+      font-size: 1.5em; }
+      #page-section4 .listen a.link i {
+        font-size: 1.5em; }
+  #page-section4 .buy a.link img {
+    width: 120px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,27 @@
-// @media all and (max-width: 640px) {
-//   img{
-//     border: 3px solid red;
-//   }
-// }
+@media all and (max-width: 768px) {
+  .section {
+    h2 {
+      font-size: 2em;
+    }
+  }
+  #page-section4 {
+    .listen {
+      margin-bottom: $spacer*2;
+      a.link {
+        margin-bottom: $spacer;
+        font-size: 1.5em;
+        i {
+          font-size: 1.5em;
+        }
+      }
+    }
+    .buy {
+      a.link {
+        img {
+          width: 120px;
+        }
+      }
+    }
+
+  }
+}

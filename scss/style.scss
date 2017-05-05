@@ -17,6 +17,11 @@ h1{
 	font-size: 6em;
 }
 
+h1, h2, h3 {
+	padding-left: $spacer*2;
+	padding-right: $spacer*2;
+}
+
 .section {
 	text-align:center;
 	.content {
