@@ -220,18 +220,24 @@ body.off-canvas #toggle div.bar {
 #page-section3 .slide3 {
   background-image: url("../img/section1c.png"); }
 
+#page-section4 h2 {
+  color: white;
+  padding-bottom: 30px; }
 #page-section4 a.link {
   display: block;
-  padding: 15px; }
-#page-section4 .listen a.link {
+  padding: 15px;
   color: white;
+  text-decoration: none; }
+#page-section4 .listen a.link {
   letter-spacing: 5px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-family: "akzidenz-grotesk_bqregular", sans-serif; }
   #page-section4 .listen a.link i {
     font-size: 2em; }
+    #page-section4 .listen a.link i:after {
+      vertical-align: middle; }
 #page-section4 .buy a.link img {
-  width: 100px; }
+  width: 150px; }
 
 /*
 #page-section4{

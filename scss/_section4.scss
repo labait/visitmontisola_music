@@ -1,18 +1,26 @@
 
 #page-section4 {
+
+  h2 {
+    color: white;
+    padding-bottom: $spacer*2;
+  }
   a.link {
     display: block;
     padding: $spacer;
+    color: white;
+    text-decoration: none;
   }
   .listen {
     a.link {
-      color: white;
-      //text-transform: uppercase;
       letter-spacing: 5px;
-      font-size: 1.5em;
+      font-size: 2em;
       font-family: $font1-regular;
       i {
         font-size: 2em;
+        &:after {
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -20,7 +28,7 @@
   .buy {
     a.link {
       img {
-        width: 100px;
+        width: 150px;
       }
     }
   }
