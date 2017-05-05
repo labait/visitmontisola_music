@@ -4,8 +4,26 @@ $primary-color: #222222;
 $secondary-color: #f9f9f9;
 $extra-color: #ED9000;
 
-body {
-  //display: none !important;
+
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
 }
 
 @import "font";
