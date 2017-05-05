@@ -9,7 +9,7 @@
     border-bottom: 1px solid $extra-color;
     margin: 0% 30%;
     letter-spacing: 5px;
-    font-family: 'akzidenz-grotesk_bqbold', sans-serif;
+    font-family: $font1-bold;
   }
   h3{
     text-transform: uppercase;
@@ -17,7 +17,7 @@
     font-size: 1.3em;
     padding: 5px;
     letter-spacing: 2.5px;
-    font-family: 'akzidenz-grotesk_bqbold', sans-serif;
+    font-family: $font1-bold;
   }
   p.text1{
     width: 30%;
@@ -26,7 +26,7 @@
     font-size: 1.2em;
     color: $primary-color;
     letter-spacing: 2.5px;
-    font-family: 'akzidenz-grotesk_bqregular', sans-serif;
+    font-family: $font1-regular;
   }
   p.text2{
     width: 55%;
@@ -34,7 +34,7 @@
     text-align: left;
     font-size: 1.2em;
     color: $primary-color;
-    font-family: 'akzidenz-grotesk_bqregular', sans-serif;
+    font-family: $font1-regular;
   }
   img{
     width: 15%;

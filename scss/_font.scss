@@ -1,11 +1,3 @@
-$spacer: 15px;
-$primary-color: #222222;
-$secondary-color: #f9f9f9;
-$extra-color: #ED9000;
-
-body {
-  //display: none !important;
-}
 @font-face {
     font-family: 'bauerbodni_btbold';
     src: url('./fonts/bauer_bodoni_bold_bt-webfont.woff2') format('woff2'),
@@ -34,3 +26,7 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
+$font1-regular: 'akzidenz-grotesk_bqregular', sans-serif;
+$font1-bold: 'akzidenz-grotesk_bqbold', sans-serif;
+$font1-light:'akzidenz-grotesk_bq_lightRg', sans-serif;
