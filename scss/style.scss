@@ -4,6 +4,8 @@ $primary-color: #222222;
 $secondary-color: #f9f9f9;
 $extra-color: #ED9000;
 
+@import "font";
+@import "mixins";
 
 body{
 	font-family: arial,helvetica;
@@ -14,19 +16,35 @@ body{
 h1{
 	font-size: 6em;
 }
+
+.section {
+	text-align:center;
+	h1, h2{
+		font-family: $font2-bold;
+	}
+	h2 {
+		font-size: 3em;
+		color: $primary-color;
+		padding-bottom: $spacer;
+		margin-bottom: $spacer;
+		text-align: center;
+		&:after {
+			content: " ";
+			margin-top: $spacer;
+			display: block;
+			border-bottom: 3px solid $extra-color;
+			width: 200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
 p{
 	font-size: 2em;
 }
-.intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
-}
-.section{
-	text-align:center;
-}
 
-@import "font";
+
 @import "off-canvas";
 @import "section1";
 @import "section2";

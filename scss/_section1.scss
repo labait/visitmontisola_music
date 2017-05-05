@@ -1,44 +1,39 @@
 #page-section1{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image: url('../img/section0.jpg');
+  background-size: cover;
 
-  img{
-    width: 100%;
-    filter: blur(3px);
-    top: -9999;
-    left: -9999;
-    right: -9999;
-    bottom: -9999;
-    min-width: 100%;
-    max-height: 100%;
+  h2 {
+    &:after {
+      display: none;
+    }
   }
-  h1{
+
+
+  h1,h2,a {
     color: $secondary-color;
     text-align: center;
-    font-family: "bauerbodni_btbold";
   }
-  p{
-    color: $secondary-color;
-    text-align: center;
-    font-family: "bauerbodni_btbold";
-  }
-  h4{
-    color: $secondary-color;
-    text-align: center;
+  a.link{
+    display: block;
+    width: 200px;
+    @include margin-auto;
     text-transform: uppercase;
-    padding: 1%;
     border: 1px solid $secondary-color;
-    margin: 2% 40%;
     font-family: $font1-bold;
+    padding: $spacer;
+    margin-top: $spacer*4;
+    font-size: 2em;
+    @include border-radius($spacer/2);
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $secondary-color;
+      text-decoration: none;
+
+    }
   }
-  a{
-    color: $secondary-color;
-  }
-  .img{
-    position: relative;
-  }
-  .text{
-    position: absolute;
-    top: 40%;
-    left: 10px;
-    width: 100%;
-  }
+
 }

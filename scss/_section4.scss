@@ -1,17 +1,17 @@
 
 #page-section4 {
-
   h2 {
-    color: white;
-    padding-bottom: $spacer*2;
+    color: $secondary-color;
+    font-family: $font1-regular;
+    margin-bottom: $spacer*2;
   }
   a.link {
     display: block;
-    padding: $spacer;
     color: white;
     text-decoration: none;
   }
   .listen {
+    margin-bottom: $spacer*6;
     a.link {
       letter-spacing: 5px;
       font-size: 2em;
@@ -34,135 +34,3 @@
   }
 
 }
-
-/*
-#page-section4{
-
-
-
-  .ascolta{
-    li.spotify{
-      float: left;
-      width: 13%;
-      text-align: right;
-      border-bottom: 1px solid #80D422;
-      margin: 3% 10%;
-      padding: 0.5% 0%;
-      font-family: $font1-bold;
-    }
-    li.youtube{
-      float: left;
-      width: 13%;
-      text-align: right;
-      border-bottom: 1px solid #FA4A9D;
-      margin: 3% 10%;
-      padding: 0.5% 0%;
-      font-family: $font1-bold;
-    }
-    li.facebook{
-      float: left;
-      width: 13%;
-      text-align: right;
-      border-bottom: 1px solid #80C3F2;
-      margin: 3% 10%;
-      padding: 0.5% 0%;
-      font-family: $font1-bold;
-    }
-    a {
-      color: white;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-family: $font1-bold;
-    }
-  }
-
-  i.fa-spotify{
-    padding-right: 22%;
-    font-size: 1.5em;
-  }
-  i.fa-youtube-square{
-    padding-right: 20%;
-    font-size: 1.5em;
-  }
-  i.fa-facebook-square{
-    padding-right: 12%;
-    font-size: 1.5em;
-  }
-
-  .footer{
-    nav{
-      padding-top: 40%;
-    }
-    ul{
-      overflow-x:hidden;
-      white-space:nowrap;
-      height: 1em;
-      width: 100%;
-      background-color: #333;
-      padding: 45px 0px;
-    }
-    li.left{
-      text-align: left;
-      color:$secondary-color;
-      font-size: 0.5em;
-      display:inline;
-      padding-right: 70%;
-      font-family: $font1-bold;
-  }
-    li.right {
-      text-align: right;
-      display:inline;
-      a{
-        color:$secondary-color;
-        font-size: 0.5em;
-        padding: 0% 2%;
-        font-family: $font1-bold;
-      }
-    }
-  }
-}
-
-
-ul.first li{
-  float: left;
-  width: 33%;
-  padding: 2% 0%;
-  img{
-    width: 30%;
-    margin: 0 auto;
-  }
-}
-
-ul.second li{
-  display: none;
-  float: left;
-  width: 33%;
-  padding: 2% 0%;
-  img{
-    width: 30%;
-    margin: 0 auto;
-  }
-}
-
-ul.third li{
-  display: none;
-  float: left;
-  width: 33%;
-  padding: 2% 0%;
-  img{
-    width: 30%;
-    margin: 0 auto;
-  }
-}
-
-ul.fourth li{
-  display: none;
-  float: left;
-  width: 33%;
-  padding: 2% 0%;
-  img{
-    width: 30%;
-    margin: 0 auto;
-  }
-}
-*/

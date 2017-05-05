@@ -87,11 +87,11 @@ body.off-canvas #toggle div.bar {
     text-align: center;
   }
   nav ul li {
-    margin-bottom: $spacer*2;
+    margin-bottom: $spacer;
     list-style: none;
     transition: all 0.3s ease;
-    font-size: 3em;
-    font-family: $font1-bold;
+    font-size: 4em;
+    font-family: $font2-bold;
   }
   nav ul li a {
     color: $secondary-color;

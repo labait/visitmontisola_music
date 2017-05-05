@@ -1,45 +1,19 @@
 #page-section2{
-  padding-bottom:3%;
-  h2{
-    text-transform: uppercase;
+  h2 {
     color: $primary-color;
-    font-size: 2em;
-    padding-bottom: 5px;
-    padding-top: 2%;
-    border-bottom: 1px solid $extra-color;
-    margin: 0% 30%;
-    letter-spacing: 5px;
-    font-family: $font1-bold;
   }
-  h3{
-    text-transform: uppercase;
-    color: $primary-color;
-    font-size: 1.3em;
-    padding: 5px;
-    letter-spacing: 2.5px;
-    font-family: $font1-bold;
+  .col {
+    padding: $spacer*4;
+
   }
-  p.text1{
-    width: 30%;
-    padding: 4% 2% 2% 4%;
-    text-align: left;
-    font-size: 1.2em;
-    color: $primary-color;
-    letter-spacing: 2.5px;
-    font-family: $font1-regular;
+  .col1 {
+    padding-top: $spacer*6;
   }
-  p.text2{
-    width: 55%;
-    padding: 2% 0% 0% 4%;
-    text-align: left;
-    font-size: 1.2em;
-    color: $primary-color;
-    font-family: $font1-regular;
-  }
-  img{
-    width: 15%;
-    margin-top: -50%;
-    margin-left: 50%;
-    padding-bottom: 2%
+  .col2 {
+    text-align: center;
+    img {
+      max-height: 300px;
+      @include margin-auto;
+    }
   }
 }
