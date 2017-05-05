@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'bauerbodni_btbold';
+  src: url("bauer_bodoni_bold_bt-webfont.woff2") format("woff2"), url("bauer_bodoni_bold_bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqregular';
+  src: url("akzidenzgrotesk-regular-webfont.woff2") format("woff2"), url("akzidenzgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bq_lightRg';
+  src: url("akzidenzgrotesk-light-webfont.woff2") format("woff2"), url("akzidenzgrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqbold';
+  src: url("akzidenzgrotesk-bold-webfont.woff2") format("woff2"), url("akzidenzgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 #toggle {
   position: absolute;
   top: 30px;
@@ -97,7 +117,7 @@ body.open #toggle div.bar {
 body.open #off-canvas {
   top: 0; }
 
-#section0 img {
+#section1 img {
   width: 100%;
   filter: blur(3px);
   top: -9999;
@@ -106,15 +126,15 @@ body.open #off-canvas {
   bottom: -9999;
   min-width: 100%;
   max-height: 100%; }
-#section0 h1 {
+#section1 h1 {
   color: #f9f9f9;
   text-align: center;
   font-family: "bauerbodni_btbold"; }
-#section0 p {
+#section1 p {
   color: #f9f9f9;
   text-align: center;
   font-family: "bauerbodni_btbold"; }
-#section0 h4 {
+#section1 h4 {
   color: #f9f9f9;
   text-align: center;
   text-transform: uppercase;
@@ -122,19 +142,19 @@ body.open #off-canvas {
   border: 1px solid #f9f9f9;
   margin: 2% 40%;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section0 a {
+#section1 a {
   color: #f9f9f9; }
-#section0 .img {
+#section1 .img {
   position: relative; }
-#section0 .text {
+#section1 .text {
   position: absolute;
   top: 40%;
   left: 10px;
   width: 100%; }
 
-#sectiontext {
+#section2 {
   padding-bottom: 3%; }
-  #sectiontext h2 {
+  #section2 h2 {
     text-transform: uppercase;
     color: #222222;
     font-size: 2em;
@@ -144,14 +164,14 @@ body.open #off-canvas {
     margin: 0% 30%;
     letter-spacing: 5px;
     font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-  #sectiontext h3 {
+  #section2 h3 {
     text-transform: uppercase;
     color: #222222;
     font-size: 1.3em;
     padding: 5px;
     letter-spacing: 2.5px;
     font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-  #sectiontext p.text1 {
+  #section2 p.text1 {
     width: 30%;
     padding: 4% 2% 2% 4%;
     text-align: left;
@@ -159,22 +179,22 @@ body.open #off-canvas {
     color: #222222;
     letter-spacing: 2.5px;
     font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
-  #sectiontext p.text2 {
+  #section2 p.text2 {
     width: 55%;
     padding: 2% 0% 0% 4%;
     text-align: left;
     font-size: 1.2em;
     color: #222222;
     font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
-  #sectiontext img {
+  #section2 img {
     width: 15%;
     margin-top: -50%;
     margin-left: 50%;
     padding-bottom: 2%; }
 
-#section1 img {
+#section3 img {
   width: 100%; }
-#section1 p {
+#section3 p {
   color: #f9f9f9;
   text-align: center;
   width: 30%;
@@ -182,15 +202,15 @@ body.open #off-canvas {
   text-transform: uppercase;
   font-size: 2em;
   font-family: 'akzidenz-grotesk_bq_lightRg', sans-serif; }
-#section1 .img {
+#section3 .img {
   position: relative; }
-#section1 .text {
+#section3 .text {
   position: absolute;
   top: 30%;
   left: 10px;
   width: 100%; }
 
-#section2 h2 {
+#section4 h2 {
   text-transform: uppercase;
   color: #f9f9f9;
   font-size: 2em;
@@ -200,7 +220,7 @@ body.open #off-canvas {
   margin: 0% 15%;
   letter-spacing: 5px;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 .ascolta li.spotify {
+#section4 .ascolta li.spotify {
   float: left;
   width: 13%;
   text-align: right;
@@ -208,7 +228,7 @@ body.open #off-canvas {
   margin: 3% 10%;
   padding: 0.5% 0%;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 .ascolta li.youtube {
+#section4 .ascolta li.youtube {
   float: left;
   width: 13%;
   text-align: right;
@@ -216,7 +236,7 @@ body.open #off-canvas {
   margin: 3% 10%;
   padding: 0.5% 0%;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 .ascolta li.facebook {
+#section4 .ascolta li.facebook {
   float: left;
   width: 13%;
   text-align: right;
@@ -224,40 +244,40 @@ body.open #off-canvas {
   margin: 3% 10%;
   padding: 0.5% 0%;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 .ascolta a {
+#section4 .ascolta a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 i.fa-spotify {
+#section4 i.fa-spotify {
   padding-right: 22%;
   font-size: 1.5em; }
-#section2 i.fa-youtube-square {
+#section4 i.fa-youtube-square {
   padding-right: 20%;
   font-size: 1.5em; }
-#section2 i.fa-facebook-square {
+#section4 i.fa-facebook-square {
   padding-right: 12%;
   font-size: 1.5em; }
-#section2 .footer nav {
+#section4 .footer nav {
   padding-top: 40%; }
-#section2 .footer ul {
+#section4 .footer ul {
   overflow-x: hidden;
   white-space: nowrap;
   height: 1em;
   width: 100%;
   background-color: #333;
   padding: 45px 0px; }
-#section2 .footer li.left {
+#section4 .footer li.left {
   text-align: left;
   color: #f9f9f9;
   font-size: 0.5em;
   display: inline;
   padding-right: 70%;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
-#section2 .footer li.right {
+#section4 .footer li.right {
   text-align: right;
   display: inline; }
-  #section2 .footer li.right a {
+  #section4 .footer li.right a {
     color: #f9f9f9;
     font-size: 0.5em;
     padding: 0% 2%;
@@ -297,26 +317,5 @@ ul.fourth li {
   ul.fourth li img {
     width: 30%;
     margin: 0 auto; }
-
-@font-face {
-  font-family: 'bauerbodni_btbold';
-  src: url("bauer_bodoni_bold_bt-webfont.woff2") format("woff2"), url("bauer_bodoni_bold_bt-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'akzidenz-grotesk_bqregular';
-  src: url("akzidenzgrotesk-regular-webfont.woff2") format("woff2"), url("akzidenzgrotesk-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'akzidenz-grotesk_bq_lightRg';
-  src: url("akzidenzgrotesk-light-webfont.woff2") format("woff2"), url("akzidenzgrotesk-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'akzidenz-grotesk_bqbold';
-  src: url("akzidenzgrotesk-bold-webfont.woff2") format("woff2"), url("akzidenzgrotesk-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

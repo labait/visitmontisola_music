@@ -1,0 +1,36 @@
+#section3 {
+  img{
+    width: 100%;
+  }
+  p{
+    color: $secondary-color;
+    text-align: center;
+    width: 30%;
+    padding: 0% 35%;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'akzidenz-grotesk_bq_lightRg', sans-serif;
+  }
+  .img{
+    position: relative;
+  }
+  .text{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+    width: 100%;
+  }
+}
+
+// #slide1{
+// 		background-image: url('../img/section1a.png');
+// 		background-repeat: no-repeat;
+// 	}
+// 	#slide2{
+// 		background-image: url('../img/section1b.png');
+//     background-repeat: no-repeat;
+// 	}
+//   #slide3{
+// 		background-image: url('../img/section1c.png');
+//     background-repeat: no-repeat;
+// 	}
