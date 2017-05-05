@@ -1,90 +1,63 @@
-#toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 30px;
-  height: 21px;
-  cursor: pointer;
-  z-index: 3; }
+/*
+Error: File to import not found or unreadable: font.
+       Load path: /Users/magnum/projects/laba/biennio_primo/molinari_antonio/visitmontisola_music/scss
+        on line 11 of scss/style.scss
 
-#toggle div.bar,
-#toggle div.bar:before,
-#toggle div.bar:after {
-  width: 100%;
-  height: 3px;
-  background: white; }
+6: 
+7: body {
+8:   //display: none !important;
+9: }
+10: 
+11: @import "font";
+12: @import "off-canvas";
+13: @import "section1";
+14: @import "section2";
+15: @import "section3";
+16: @import "section4";
 
-#toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {
-  width: 100%;
-  height: 3px;
-  background: white; }
-#toggle div.bar {
-  position: relative;
-  transform: translateY(9px);
-  transition: all 0.3s 0.3s ease; }
-  #toggle div.bar:after, #toggle div.bar:before {
-    content: " ";
-    position: absolute;
-    transition: all 0.3s 0.3s ease, transform 0.3s ease; }
-  #toggle div.bar:before {
-    bottom: 9px; }
-  #toggle div.bar:after {
-    top: 9px; }
-#toggle div.bar.animate:after, #toggle div.bar.animate:before {
-  transition: all 0.3s ease, transform 0.3s 0.3s ease; }
-#toggle div.bar.animate:after {
-  top: 0;
-  transform: rotate(45deg); }
-#toggle div.bar.animate:before {
-  bottom: 0;
-  transform: rotate(-45deg); }
-
-#fullpage {
-  z-index: 1; }
-
-#page {
-  background: #222222;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: absolute;
-  width: 100%;
-  right: 0;
-  z-index: 0; }
-
-#off-canvas {
-  z-index: 2;
-  position: fixed;
-  width: 100vw;
-  top: -100vw;
-  height: 100vh;
-  transition: all 0.3s ease;
-  background: white; }
-  #off-canvas nav ul, #off-canvas nav ul li {
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: static; }
-  #off-canvas nav ul {
-    padding: 30px; }
-  #off-canvas nav ul li {
-    margin-bottom: 15px;
-    font-size: 2em; }
-  #off-canvas nav ul li a {
-    text-transform: uppercase;
-    color: black;
-    text-decoration: none; }
-
-body.open #fp-nav {
-  display: none; }
-body.open #toggle div.bar:before, body.open #toggle div.bar:after {
-  background: #300; }
-
-body.open #off-canvas {
-  top: 0; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/style.scss:11
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: font.\A        Load path: /Users/magnum/projects/laba/biennio_primo/molinari_antonio/visitmontisola_music/scss\A         on line 11 of scss/style.scss\A \A 6: \A 7: body {\A 8:   //display: none !important;\A 9: }\A 10: \A 11: @import \"font\";\A 12: @import \"off-canvas\";\A 13: @import \"section1\";\A 14: @import \"section2\";\A 15: @import \"section3\";\A 16: @import \"section4\";"; }
