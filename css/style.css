@@ -1,63 +1,321 @@
-/*
-Error: File to import not found or unreadable: font.
-       Load path: /Users/magnum/projects/laba/biennio_primo/molinari_antonio/visitmontisola_music/scss
-        on line 11 of scss/style.scss
+@font-face {
+  font-family: 'bauerbodni_btbold';
+  src: url("./fonts/bauer_bodoni_bold_bt-webfont.woff2") format("woff2"), url("./fonts/bauer_bodoni_bold_bt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqregular';
+  src: url("./fonts/akzidenzgrotesk-regular-webfont.woff2") format("woff2"), url("./fonts/akzidenzgrotesk-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bq_lightRg';
+  src: url("./fonts/akzidenzgrotesk-light-webfont.woff2") format("woff2"), url("./fonts/akzidenzgrotesk-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz-grotesk_bqbold';
+  src: url("./fonts/akzidenzgrotesk-bold-webfont.woff2") format("woff2"), url("./fonts/akzidenzgrotesk-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+#toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 3; }
 
-6: 
-7: body {
-8:   //display: none !important;
-9: }
-10: 
-11: @import "font";
-12: @import "off-canvas";
-13: @import "section1";
-14: @import "section2";
-15: @import "section3";
-16: @import "section4";
+#toggle div.bar,
+#toggle div.bar:before,
+#toggle div.bar:after {
+  width: 100%;
+  height: 3px;
+  background: white; }
 
-Backtrace:
-scss/style.scss:11
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:45:in `import'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Users/magnum/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: font.\A        Load path: /Users/magnum/projects/laba/biennio_primo/molinari_antonio/visitmontisola_music/scss\A         on line 11 of scss/style.scss\A \A 6: \A 7: body {\A 8:   //display: none !important;\A 9: }\A 10: \A 11: @import \"font\";\A 12: @import \"off-canvas\";\A 13: @import \"section1\";\A 14: @import \"section2\";\A 15: @import \"section3\";\A 16: @import \"section4\";"; }
+#toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {
+  width: 100%;
+  height: 3px;
+  background: #ED9000; }
+#toggle div.bar {
+  position: relative;
+  transform: translateY(9px);
+  transition: all 0.3s 0.3s ease; }
+  #toggle div.bar:after, #toggle div.bar:before {
+    content: " ";
+    position: absolute;
+    transition: all 0.3s 0.3s ease, transform 0.3s ease; }
+  #toggle div.bar:before {
+    bottom: 9px; }
+  #toggle div.bar:after {
+    top: 9px; }
+#toggle div.bar.animate:after, #toggle div.bar.animate:before {
+  transition: all 0.3s ease, transform 0.3s 0.3s ease; }
+#toggle div.bar.animate:after {
+  top: 0;
+  transform: rotate(45deg); }
+#toggle div.bar.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg); }
+
+#fullpage {
+  z-index: 1; }
+
+#page {
+  background: #222222;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  z-index: 0; }
+
+#off-canvas {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  top: -200vw;
+  height: 100vh;
+  height: auto;
+  padding: 17% 0%;
+  transition: all 0.3s ease;
+  background: #ED9000; }
+  #off-canvas nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: static; }
+    #off-canvas nav ul li {
+      margin: 0% 37% 1% 37%; }
+    #off-canvas nav ul li:hover {
+      text-decoration: underline;
+      transition: all 0.1s ease; }
+  #off-canvas nav ul {
+    padding: 30px;
+    text-align: center; }
+  #off-canvas nav ul li {
+    margin-bottom: 15px;
+    font-size: 2em; }
+  #off-canvas nav ul li a {
+    text-transform: uppercase;
+    color: #f9f9f9;
+    text-decoration: none; }
+
+body.open #fp-nav {
+  display: none; }
+body.open #toggle div.bar:before, body.open #toggle div.bar:after {
+  background: #f9f9f9; }
+body.open #toggle div.bar {
+  background: #ED9000; }
+
+body.open #off-canvas {
+  top: 0; }
+
+#section1 img {
+  width: 100%;
+  filter: blur(3px);
+  top: -9999;
+  left: -9999;
+  right: -9999;
+  bottom: -9999;
+  min-width: 100%;
+  max-height: 100%; }
+#section1 h1 {
+  color: #f9f9f9;
+  text-align: center;
+  font-family: "bauerbodni_btbold"; }
+#section1 p {
+  color: #f9f9f9;
+  text-align: center;
+  font-family: "bauerbodni_btbold"; }
+#section1 h4 {
+  color: #f9f9f9;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1%;
+  border: 1px solid #f9f9f9;
+  margin: 2% 40%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section1 a {
+  color: #f9f9f9; }
+#section1 .img {
+  position: relative; }
+#section1 .text {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  width: 100%; }
+
+#section2 {
+  padding-bottom: 3%; }
+  #section2 h2 {
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 2em;
+    padding-bottom: 5px;
+    padding-top: 2%;
+    border-bottom: 1px solid #ED9000;
+    margin: 0% 30%;
+    letter-spacing: 5px;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+  #section2 h3 {
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 1.3em;
+    padding: 5px;
+    letter-spacing: 2.5px;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+  #section2 p.text1 {
+    width: 30%;
+    padding: 4% 2% 2% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: #222222;
+    letter-spacing: 2.5px;
+    font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
+  #section2 p.text2 {
+    width: 55%;
+    padding: 2% 0% 0% 4%;
+    text-align: left;
+    font-size: 1.2em;
+    color: #222222;
+    font-family: 'akzidenz-grotesk_bqregular', sans-serif; }
+  #section2 img {
+    width: 15%;
+    margin-top: -50%;
+    margin-left: 50%;
+    padding-bottom: 2%; }
+
+#section3 img {
+  width: 100%; }
+#section3 p {
+  color: #f9f9f9;
+  text-align: center;
+  width: 30%;
+  padding: 0% 35%;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'akzidenz-grotesk_bq_lightRg', sans-serif; }
+#section3 .img {
+  position: relative; }
+#section3 .text {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  width: 100%; }
+
+#section4 h2 {
+  text-transform: uppercase;
+  color: #f9f9f9;
+  font-size: 2em;
+  padding-bottom: 5px;
+  padding-top: 2%;
+  border-bottom: 1px solid #ED9000;
+  margin: 0% 15%;
+  letter-spacing: 5px;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 .ascolta li.spotify {
+  float: left;
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #80D422;
+  margin: 3% 10%;
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 .ascolta li.youtube {
+  float: left;
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #FA4A9D;
+  margin: 3% 10%;
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 .ascolta li.facebook {
+  float: left;
+  width: 13%;
+  text-align: right;
+  border-bottom: 1px solid #80C3F2;
+  margin: 3% 10%;
+  padding: 0.5% 0%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 .ascolta a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 i.fa-spotify {
+  padding-right: 22%;
+  font-size: 1.5em; }
+#section4 i.fa-youtube-square {
+  padding-right: 20%;
+  font-size: 1.5em; }
+#section4 i.fa-facebook-square {
+  padding-right: 12%;
+  font-size: 1.5em; }
+#section4 .footer nav {
+  padding-top: 40%; }
+#section4 .footer ul {
+  overflow-x: hidden;
+  white-space: nowrap;
+  height: 1em;
+  width: 100%;
+  background-color: #333;
+  padding: 45px 0px; }
+#section4 .footer li.left {
+  text-align: left;
+  color: #f9f9f9;
+  font-size: 0.5em;
+  display: inline;
+  padding-right: 70%;
+  font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section4 .footer li.right {
+  text-align: right;
+  display: inline; }
+  #section4 .footer li.right a {
+    color: #f9f9f9;
+    font-size: 0.5em;
+    padding: 0% 2%;
+    font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+
+ul.first li {
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.first li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.second li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.second li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.third li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.third li img {
+    width: 30%;
+    margin: 0 auto; }
+
+ul.fourth li {
+  display: none;
+  float: left;
+  width: 33%;
+  padding: 2% 0%; }
+  ul.fourth li img {
+    width: 30%;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=style.css.map */

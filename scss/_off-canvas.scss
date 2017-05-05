@@ -1,4 +1,7 @@
 $spacer: 15px;
+$primary-color: #222222;
+$secondary-color: #f9f9f9;
+$extra-color: #ED9000;
 
 body {
   //display: none !important;
@@ -27,7 +30,7 @@ body {
   div.bar, div.bar:before, div.bar:after {
     width: 100%;
     height: 3px;
-    background: white;
+    background: $extra-color;
   }
   div.bar {
     position: relative;
@@ -91,21 +94,31 @@ body {
   z-index: 2;
   position: fixed;
   width: 100vw;
-  top: -100vw;
+  top: -200vw;
   height: 100vh;
+  height: auto;
+  padding: 17% 0%;
 
   transition: all 0.3s ease;
-  background: white;
+  background: $extra-color;
 
-  nav ul, nav ul li {
+  nav ul {
     margin: 0;
     padding: 0;
     display: block;
     position: static;
+    li{
+      margin: 0% 37% 1% 37%;
+    }
+    li:hover{
+      text-decoration: underline;
+      transition: all 0.1s ease;
+    }
   }
 
   nav ul {
     padding: 30px;
+    text-align: center;
   }
 
   nav ul li {
@@ -115,7 +128,7 @@ body {
 
   nav ul li a {
     text-transform: uppercase;
-    color: black;
+    color: $secondary-color;
     text-decoration: none;
   }
 }
@@ -128,10 +141,14 @@ body.open{
 
     #toggle {
       div.bar:before, div.bar:after {
-        background: #300;
+        background: $secondary-color;
+      }
+      div.bar{
+        background: $extra-color;
       }
     }
 }
+
 
 
 body.open #page {

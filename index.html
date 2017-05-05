@@ -3,13 +3,13 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Continuous scrolling - fullPage.js</title>
+  <title>Montisola - tra cielo e terra</title>
   <meta name="author" content="Matthew Howell" />
   <meta name="description" content="fullPage continuous scrolling demo." />
   <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
   <meta name="Resource-type" content="Document" />
 
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -25,14 +25,14 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="js/examples.js"></script>
+<script type="text/javascript" src="js/superfish.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    sectionsColor: ['#000000', '#f9f9f9', '#7BAABE', '#222222'],
+    anchors: ['section1', 'section1', 'section2', '4thpage'],
     menu: "#menu",
-    navigation: true
+    navigation: false
   });
 });
 </script>
@@ -46,39 +46,126 @@ $(document).ready(function() {
   </div>
 
   <section id="page">
-    <ul id="menu">
+    <!-- <ul id="menu">
       <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
       <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
       <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-    </ul>
-
+    </ul> -->
 
 
     <div id="fullpage">
-      <div class="section " id="section0">
-        <h1>fullPage.js</h1>
-        <p>Continuous Scrolling Enabled</p>
-        <img src="imgs/fullPage.png" alt="fullPage" />
+      <div class="section" id="section1" data-anchor="section1">
+        <div class="img">
+          <img src="img/section0.jpg" alt="" />
+           <div class="text">
+             <h1>Montisola</h1>
+             <p>tra cielo e terra</p>
+             <h4><a href="#section2">scopri</a></h4>
+           </div>
+        </div>
       </div>
-      <div class="section active" id="section1">
+      <div class="section" id="section2" data-anchor="section2">
+        <h2>Cinque minuti</h2>
+        <h3>Ma quando sei di qua, sei da un'altra parte</h3>
+        <p class="text1">MEMORIA | RACCONTI | LEGGENDE TRADIZIONE | SUONI | PAESAGGIO</p>
+        <p class="text2"> All’interno del cd sono racchiuse tutte le emozioni del nostro territorio e della nostra gente.
+            L’effetto scatenante? Un ponte immaginario e la capacità visionaria di chi ci ha creduto.
+            Un ponte a scadenza, a tempo, che ha contribuito a dare visibilità ad un territorio che è lì da sempre: bello, pieno di poesia, pieno d’amore.
+            Ma silenzioso.
+            Le composizioni originali contenute all’interno del disco traducono in immagini e in quadri musicali le suggestioni poetiche e letterarie dei drammaturghi di Around.
+            Il lago di Iseo ha un fascino che lo distingue dagli altri laghi, anche per la perla che affiora al suo centro: Montisola, tra cielo e terra.
+            Quello intrapreso è un progetto certamente ambizioso, che mira a storicizzare e a creare una ipotesi di percorso culturale e artistico teso al futuro. </p>
+        <img src="img/sectiontext.png" alt="" />
+      </div>
+      <div class="section" id="section3" data-anchor="section3" >
         <div class="slide" id="slide1">
           <div class="intro">
-            <h1>Around the world scrolling</h1>
-            <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
+            <div class="img">
+                <img src="img/section1a.png" alt="" />
+               <div class="text">
+                 <p>Si siamo ancora qui a coltivare quel ricordo</p>
+               </div>
+            </div>
           </div>
         </div>
         <div class="slide active" id="slide2">
-          <h1>Slide 2</h1>
+          <div class="img">
+              <img src="img/section1b.png" alt="" />
+             <div class="text">
+               <p>Attenti al vento che si alza in un momento</p>
+             </div>
+          </div>
         </div>
         <div class="slide" id="slide3">
-          <h1>Slide 3</h1>
+          <div class="img">
+              <img src="img/section1c.png" alt="" >
+             <div class="text">
+               <p>E il fragore dell'onda ci riporta nel silenzio</p>
+             </div>
+          </div>
         </div>
 
+
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section4" data-anchor="section4">
         <div class="intro">
-          <h1>Scroll Down</h1>
-          <p>And it will animate down to the first section</p>
+          <h2>Ascolta i brani e scegli dove acquistare</h2>
+          <nav class="ascolta">
+            <ul>
+              <li class="spotify"> <a href="https://open.spotify.com/album/7eRh73EUZ9afThvdMWhQSP"> <i class="fa fa-spotify" aria-hidden="true"></i> Spotify </a> </li>
+              <li class="youtube"> <a href="https://www.youtube.com/channel/UCDRWA-0WqdDL5lUOBCmfuAg"> <i class="fa fa-youtube-square" aria-hidden="true"></i> YouTube </a> </li>
+              <li class="facebook"> <a href="https://www.facebook.com/visitmonteisola/"> <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook </a> </li>
+            </ul>
+          </nav>
+          <nav class="acquista">
+            <ul class="first">
+              <li> <a href="https://www.amazon.co.uk/Tra-cielo-e-terra-Montisola/dp/B06XYGMDPJ"> <img src="store/amazonmusic.png"> </a> </li>
+              <li> <a href="http://www.deezer.com/album/15821374"> <img src="store/deezer.png"> </a> </li>
+              <li> <a href="https://play.google.com/store/search?q=MONTISOLA%20TRA%20CIELO%20E%20TERRA"> <img src="store/googleplaymusic.png"> </a> </li>
+              <li> <a href="http://www.qobuz.com/es-en/album/tra-cielo-e-terra-montisola/3614974772626"> <img src="store/qobuz.png"> </a> </li>
+              <li> <a href="https://www.timmusic.it/artist/5283310"> <img src="store/timmusic.png"> </a> </li>
+              <li> <a href="https://music.yandex.ru/album/4256456"> <img src="store/yandex.png"> </a> </li>
+
+            </ul>
+            <ul class="second">
+              <li> <a href=""> <img src="store/247.png"> </a> </li>
+              <li> <a href=""> <img src="store/kkbox.png"> </a> </li>
+              <li> <a href=""> <img src="store/kohtakte.png"> </a> </li>
+              <li> <a href=""> <img src="store/mondiamedia.png"> </a> </li>
+              <li> <a href=""> <img src="store/napster.png"> </a> </li>
+              <li> <a href=""> <img src="store/ami.png"> </a> </li>
+
+            </ul>
+            <ul class ="third">
+              <li> <a href=""> <img src="store/anghami.png"> </a> </li>
+              <li> <a href=""> <img src="store/aol.png"> </a> </li>
+              <li> <a href=""> <img src="store/beelinemusic.png"> </a> </li>
+              <li> <a href=""> <img src="store/phononet.png"> </a> </li>
+              <li> <a href=""> <img src="store/qqmusic.png"> </a> </li>
+              <li> <a href=""> <img src="store/saavn.png"> </a> </li>
+            </ul>
+            <ul class="fourth">
+              <li> <a href=""> <img src="store/thumbplay.png"> </a> </li>
+              <li> <a href=""> <img src="store/tidal.png"> </a> </li>
+              <li> <a href=""> <img src="store/vervelife.png"> </a> </li>
+              <li> <a href=""> <img src="store/xboxmusic.png"> </a> </li>
+              <li> <a href=""> <img src="store/zvooq.png"> </a> </li>
+            </ul>
+          </nav>
+          <div class="footer">
+
+            <nav>
+              <ul>
+                <li class="left">
+                   © 2017, Monte Isola
+                </li>
+                <li class="right">
+                  <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Spotify </a>
+                  <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Facebook </a>
+                  <a href=""> <i class="fa fa-address-book-o" aria-hidden="true"></i>Youtube </a>
+                </li>
+              </ul>
+            </nav>
         </div>
       </div>
     </div>
@@ -86,10 +173,12 @@ $(document).ready(function() {
 
   <section id="off-canvas">
       <nav>
-          <ul>
-              <li><a href="#">Homepage</a></li>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Products</a></li>
+          <ul id="menu">
+              <!-- <li data-menuanchor="section1"><a href="https://giphy.com/gifs/11ISwbgCxEzMyY/html5">CLICCA QUI</li> -->
+              <li data-menuanchor="section1"><a href="#section1">Home</a></li>
+              <li data-menuanchor="section2"><a href="#section2">Cinque minuti</a></li>
+              <li data-menuanchor="section3"><a href="#section3">Gallery</a></li>
+              <li data-menuanchor="section4"><a href="#section4">Ascolta e Acquista</a></li>
           </ul>
       </nav>
   </section>
