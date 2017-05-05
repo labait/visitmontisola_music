@@ -228,6 +228,14 @@ body.open #off-canvas {
   top: 30%;
   left: 10px;
   width: 100%; }
+#page-section3 .slide {
+  background-size: cover; }
+#page-section3 .slide1 {
+  background-image: url("../img/section1a.png"); }
+#page-section3 .slide2 {
+  background-image: url("../img/section1b.png"); }
+#page-section3 .slide3 {
+  background-image: url("../img/section1c.png"); }
 
 #page-section4 h2 {
   text-transform: uppercase;
