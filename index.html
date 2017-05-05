@@ -9,11 +9,10 @@
   <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
   <meta name="Resource-type" content="Document" />
 
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" type="text/css" href="css/examples.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   <!--[if IE]>
   <script type="text/javascript">
@@ -25,7 +24,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="js/examples.js"></script>
 <script type="text/javascript" src="js/superfish.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -33,7 +31,7 @@ $(document).ready(function() {
     sectionsColor: ['#000000', '#f9f9f9', '#7BAABE', '#222222'],
     anchors: ['section1', 'section1', 'section2', '4thpage'],
     menu: "#menu",
-    navigation: true
+    navigation: false
   });
 });
 </script>
@@ -55,17 +53,17 @@ $(document).ready(function() {
 
 
     <div id="fullpage">
-      <div class="section" id="section1">
+      <div class="section" id="section1" data-anchor="section1">
         <div class="img">
           <img src="img/section0.jpg" alt="" />
            <div class="text">
              <h1>Montisola</h1>
              <p>tra cielo e terra</p>
-             <h4><a href="#sectiontext">scopri</a></h4>
+             <h4><a href="#section2">scopri</a></h4>
            </div>
         </div>
       </div>
-      <div class="section" id="section2">
+      <div class="section" id="section2" data-anchor="section2">
         <h2>Cinque minuti</h2>
         <h3>Ma quando sei di qua, sei da un'altra parte</h3>
         <p class="text1">MEMORIA | RACCONTI | LEGGENDE TRADIZIONE | SUONI | PAESAGGIO</p>
@@ -78,7 +76,7 @@ $(document).ready(function() {
             Quello intrapreso è un progetto certamente ambizioso, che mira a storicizzare e a creare una ipotesi di percorso culturale e artistico teso al futuro. </p>
         <img src="img/sectiontext.png" alt="" />
       </div>
-      <div class="section" id="section3">
+      <div class="section" id="section3" data-anchor="section3" >
         <div class="slide" id="slide1">
           <div class="intro">
             <div class="img">
@@ -108,7 +106,7 @@ $(document).ready(function() {
 
 
       </div>
-      <div class="section" id="section4">
+      <div class="section" id="section4" data-anchor="section4">
         <div class="intro">
           <h2>Ascolta i brani e scegli dove acquistare</h2>
           <nav class="ascolta">
@@ -141,7 +139,7 @@ $(document).ready(function() {
               <li> <a href=""> <img src="store/anghami.png"> </a> </li>
               <li> <a href=""> <img src="store/aol.png"> </a> </li>
               <li> <a href=""> <img src="store/beelinemusic.png"> </a> </li>
-              <li> <a href=""> <img src="store/photonet.png"> </a> </li>
+              <li> <a href=""> <img src="store/phononet.png"> </a> </li>
               <li> <a href=""> <img src="store/qqmusic.png"> </a> </li>
               <li> <a href=""> <img src="store/saavn.png"> </a> </li>
             </ul>
@@ -174,12 +172,12 @@ $(document).ready(function() {
 
   <section id="off-canvas">
       <nav>
-          <ul>
-              <li><a href="https://giphy.com/gifs/11ISwbgCxEzMyY/html5">CLICCA QUI</li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Cinque minuti</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Ascolta e Acquista</a></li>
+          <ul id="menu">
+              <!-- <li data-menuanchor="section1"><a href="https://giphy.com/gifs/11ISwbgCxEzMyY/html5">CLICCA QUI</li> -->
+              <li data-menuanchor="section1"><a href="#section1">Home</a></li>
+              <li data-menuanchor="section2"><a href="#section2">Cinque minuti</a></li>
+              <li data-menuanchor="section3"><a href="#section3">Gallery</a></li>
+              <li data-menuanchor="section4"><a href="#section4">Ascolta e Acquista</a></li>
           </ul>
       </nav>
   </section>
