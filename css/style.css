@@ -216,6 +216,15 @@ body.open #off-canvas {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'akzidenz-grotesk_bqbold', sans-serif; }
+#section2 i.fa-spotify {
+  padding-right: 22%;
+  font-size: 1.5em; }
+#section2 i.fa-youtube-square {
+  padding-right: 20%;
+  font-size: 1.5em; }
+#section2 i.fa-facebook-square {
+  padding-right: 12%;
+  font-size: 1.5em; }
 #section2 .footer ul {
   overflow-x: hidden;
   white-space: nowrap;
