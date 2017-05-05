@@ -1,16 +1,36 @@
+
+#page-section4 {
+  a.link {
+    display: block;
+    padding: $spacer;
+  }
+  .listen {
+    a.link {
+      color: white;
+      //text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 1.5em;
+      font-family: $font1-regular;
+      i {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .buy {
+    a.link {
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+}
+
+/*
 #page-section4{
 
-  h2{
-    text-transform: uppercase;
-    color: $secondary-color;
-    font-size: 2em;
-    padding-bottom: 5px;
-    padding-top: 2%;
-    border-bottom: 1px solid $extra-color;
-    margin: 0% 15%;
-    letter-spacing: 5px;
-    font-family: $font1-bold;
-  }
+
 
   .ascolta{
     li.spotify{
@@ -137,3 +157,4 @@ ul.fourth li{
     margin: 0 auto;
   }
 }
+*/

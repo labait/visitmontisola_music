@@ -64,6 +64,10 @@ body.off-canvas #toggle div.bar {
 
 
 #off-canvas {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
   transition: all 0.3s ease;
   z-index: 2;
   position: fixed;
