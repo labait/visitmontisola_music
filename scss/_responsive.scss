@@ -10,11 +10,18 @@
     }
   }
   #page-section2 {
-    .col {
-      padding-top: $spacer;
+    h2{
+      padding-top: $spacer*4;
     }
     .col1 {
       padding-top: 0;
+      padding-bottom: 0;
+    }
+    .col2 {
+      position: absolute;
+      margin-top: -$spacer*46;
+      width: 170px;
+      padding-left: $spacer*2;
     }
   }
   #page-section3 {
