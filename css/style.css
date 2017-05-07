@@ -169,7 +169,9 @@ body.off-canvas #toggle div.bar {
 #page-section2 .col {
   padding: 60px; }
 #page-section2 .col1 {
-  padding-top: 90px; }
+  padding-top: 90px;
+  line-height: 25px;
+  padding-left: 120px; }
 #page-section2 .col2 {
   text-align: center; }
   #page-section2 .col2 img {
