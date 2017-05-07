@@ -180,8 +180,7 @@ body.off-canvas #toggle div.bar {
     margin-left: auto; }
 
 #page-section3 .text {
-  font-size: 2em;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 3em;
   -webkit-border-radius: 7.5px;
   -moz-border-radius: 7.5px;
   -ms-border-radius: 7.5px;
@@ -194,11 +193,11 @@ body.off-canvas #toggle div.bar {
 #page-section3 .slide {
   background-size: cover; }
 #page-section3 .slide1 {
-  background-image: url("../img/section1a.png"); }
+  background-image: url("../img/section1ap.png"); }
 #page-section3 .slide2 {
-  background-image: url("../img/section1b.png"); }
+  background-image: url("../img/section1bp.png"); }
 #page-section3 .slide3 {
-  background-image: url("../img/section1c.png"); }
+  background-image: url("../img/section1cp.png"); }
 
 #page-section4 h2 {
   color: #f9f9f9;
