@@ -217,7 +217,10 @@ body.off-canvas #toggle div.bar {
       #page-section4 .listen a.link i:after {
         vertical-align: middle; }
 #page-section4 .buy a.link img {
-  width: 150px; }
+  width: 150px;
+  filter: grayscale(100%); }
+#page-section4 .buy a.link img:hover {
+  filter: none; }
 
 @media all and (max-width: 375px) {
   .section h2 {

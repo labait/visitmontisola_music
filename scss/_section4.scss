@@ -29,6 +29,10 @@
     a.link {
       img {
         width: 150px;
+        filter: grayscale(100%);
+      }
+      img:hover{
+        filter: none;
       }
     }
   }
