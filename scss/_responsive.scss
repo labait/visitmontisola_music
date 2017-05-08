@@ -1,4 +1,4 @@
-@media all and (max-width: 425px) {
+@media all and (max-width: 375px) {
   .section {
     h2 {
       font-size: 2em;
@@ -14,14 +14,14 @@
       padding-top: $spacer*4;
     }
     .col1 {
-      padding: 0px 45px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
     .col2 {
       position: absolute;
       margin-top: -$spacer*46;
       width: 170px;
       padding-left: $spacer*2;
-      padding-right: $spacer*4;
     }
   }
   #page-section3 {
