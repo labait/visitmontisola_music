@@ -223,7 +223,7 @@ body.off-canvas #toggle div.bar {
 #page-section4 .buy a.link img:hover {
   filter: none; }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 420px) {
   .section h2 {
     font-size: 2em; }
 
@@ -233,13 +233,14 @@ body.off-canvas #toggle div.bar {
   #page-section2 h2 {
     padding-top: 60px; }
   #page-section2 .col1 {
-    padding-top: 0;
-    padding-bottom: 0; }
+    padding: 0px 45px; }
   #page-section2 .col2 {
     position: absolute;
-    margin-top: -690px;
+    margin-top: -675px;
+    margin-bottom: 0px;
     width: 170px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding-right: 75px; }
 
   #page-section3 .slide .text {
     font-size: 1.5em; }
