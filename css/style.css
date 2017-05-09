@@ -231,12 +231,16 @@ body.off-canvas #toggle div.bar {
     font-size: 3em; }
 
   #page-section2 h2 {
-    padding-top: 60px; }
+    margin: 0;
+    padding: 0; }
+  #page-section2 h3 {
+    margin: 15px 0; }
   #page-section2 .col1 {
-    padding: 0px 45px; }
+    padding: 0px 45px;
+    line-height: 20px; }
   #page-section2 .col2 {
     position: absolute;
-    margin-top: -675px;
+    margin-top: -570px;
     margin-bottom: 0px;
     width: 170px;
     padding-left: 30px;
